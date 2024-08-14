@@ -1,15 +1,12 @@
 # Projet INF402 - Solveur de NoriNori
 
 
-## Ce projet comporte 3 programmes en python:
+## Utilisation
 
-Le programme "instance_en_DIMACS" qui traduit une instance d'un probleme en fichier DIMACS
+Le programme principal `main` qui à partir de l'instance d'un probleme (.txt à placer dans \grilles au format indiqué plus loin), enchaine toutes les étapes jusqu'à la resolution 
+et affiche la solution de maniere comprehensible à l'écran.
 
-Le prgramme "SAT_solve" qui a partir de l'instance d'un probleme, le traduit en fichier DIMACS et le resoud avec le solveur minisat
-
-Le programme principal "main" qui a partir de l'instance d'un probleme, enchaine toutes les étapes jusqu'a la resolution 
-et affiche la solution de maniere comprehensible a l'écran.
-Il est également possible de créér manuellement une instance de probleme de maniere visuelle grace a ce programme.
+Il est également possible de créér manuellement une instance de probleme de maniere visuelle grace à ce programme.
 
 
 ## !! IMPORTANT !!
