@@ -1,31 +1,37 @@
-# Projet INF402 - Solveur de NoriNori
+# Project INF402 - NoriNori Solver
 
+## Usage
+`python main.py <grid_size>`
 
-## Utilisation
-`python main.py`
+The grid will be a square of side `grid_size`
 
-Le programme principal `main` comporte 2 modes
-- à partir l'instance d'un probleme (.txt à placer dans \grilles au format indiqué ci-dessous), affiche la solution de maniere comprehensible à l'écran.
+You can create and display the solution of any NoriNori instance easily using this program.
 
-- Il est également possible de créér manuellement une instance de probleme de maniere visuelle grace à ce programme.
-
-## format des instances
-pour une grille de taille N x N, le fichier grilleN.txt est de la forme:
+## More details : Format of Instances
+For a grid of size N x N, the file `grilleN.txt` is in the following format:
 
 ```
 N 
-a1 b1\n
-...
-an  bn
+a1 b1
+.
+.
+.
+an bn
 #
 c1 d1
-...
+.
+.
+.
 cn dn
+#
+.
+.
+.
 #
 ```
 
-Les `#` permettent de séparer une zone d'une autre, toute les cases d'une zone doivent donc etre inscrites à la suite sans etre séparées par un `#`.
-Exemple sur une grille 4 x 4 comportant simplement 4 zones (les 4 bandes horizontales)
+The `#` symbols separate one zone from another. Therefore, all the cells in a zone must be listed consecutively without being separated by a `#`.
+Example for a 4 x 4 grid with 4 zones (the 4 horizontal strips):
 ```
 4
 0 0
@@ -50,9 +56,8 @@ Exemple sur une grille 4 x 4 comportant simplement 4 zones (les 4 bandes horizon
 #
 ```
 
-
 ## !! IMPORTANT !!
-Les modules python necessaires au bon fonctionnement de l'ensemble du projet sont:   
+The necessary Python modules for the proper functioning of the entire project are:
 - pysat
 - tkinter
 - os
